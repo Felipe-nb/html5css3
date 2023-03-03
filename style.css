@@ -3,11 +3,33 @@ Folha de estilo do site one page HTML5 e CSS3
 @author Felipe Bardini
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+.Container {
+    margin: 0 auto;
+    background-color: brown;
+}
+
 /* Smartphone Portrait */
 /* Smartphone Landscape */
 @media  (min-width: 576px){
     body{
         background-color: rgb(255, 0, 221);
+    }
+    .Container{
+        max-width: 540px;
     }
 }
 /* Tablet Portrait */
@@ -15,16 +37,22 @@ Folha de estilo do site one page HTML5 e CSS3
     body{
         background-color: rgb(23, 15, 58);
     }
+    .Container{
+        max-width: 720px;
 }
 /* Tablet Landscape */
 @media  (min-width: 992px){
     body{
         background-color: rgb(18, 235, 126);
     }
+    .Container{
+        max-width: 960px;
 }
 /* PC */
 @media  (min-width: 1200px){
     body{
         background-color: rgb(219, 218, 224);
     }
+    .Container{
+        max-width: 1140px;
 }
